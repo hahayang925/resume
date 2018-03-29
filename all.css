@@ -2,7 +2,7 @@ body{
     color: #4c496a;
     background-color: #F2F2F2;
     position:relative;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft JhengHei;";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft JhengHei";
 }
 body:after{
     content:'';
@@ -53,6 +53,13 @@ span{
         -ms-transform: translateX(-50%) translateY(20%);
             transform: translateX(-50%) translateY(20%);
 }
+.content-box:nth-child(odd):after{
+    right: 0;
+    -webkit-transform: translateX(50%) translateY(20%);
+        -ms-transform: translateX(50%) translateY(20%);
+            transform: translateX(50%) translateY(20%);
+}
+
 .content-box:nth-child(odd){
     text-align:right;
 }
@@ -113,9 +120,9 @@ span{
     background-position: center center;
     background-color: #fde375;
     background-repeat: no-repeat;
-    width:100px;
+    width: 100px;
     height: 100px;
-    border-radius:50%;
+    border-radius: 50%;
 }
 ul{
     list-style: disc;
@@ -274,5 +281,16 @@ a:hover{
     .skills .card-body{
         padding: 1em;
         padding-top: 0px;
+    }
+    .content-box:nth-child(odd):after{
+        -webkit-transform: translateX(-50%) translateY(20%);
+            -ms-transform: translateX(-50%) translateY(20%);
+                transform: translateX(-50%) translateY(20%);
+    }
+}
+
+@media (max-width: 400px){
+    .title{
+        width: calc(100% - 100px);
     }
 }
