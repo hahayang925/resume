@@ -182,7 +182,11 @@ a:hover{
 .list-title:active, .list-title:hover{
     color:#4c496a;
 }
-
+@media (max-width: 900px){
+    .bg1 img, .bg2{
+        opacity: 0.4;
+    }
+}
 
 @media (max-width: 767.98px){
     .content-wrapper{
@@ -211,6 +215,9 @@ a:hover{
         display:none;
     }
     .bg2 img{
+        right:-350px;
+    }
+    .bg2{
         right:-450px;
     }
     .bg1 img{
@@ -264,9 +271,7 @@ a:hover{
         height:99%;
         top:.5%;
     }
-    .bg1 img, .bg2{
-        opacity: 0.4;
-    }
+
     .skills{
         background-color: transparent;
         border:none;
